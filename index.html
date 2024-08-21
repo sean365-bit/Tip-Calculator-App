@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip calculator app</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav></nav>
+    <header></header>
+    <main class="container">
+      <section class="splitter">
+        <article class="logo">
+          <img src="./images/logo.svg" alt="splitter logo" />
+        </article>
+      </section>
+
+      <section class="calculation">
+        <div class="containerCalc">
+          <div class="input">
+            <form id="inputForm">
+              <div>
+                <label for="bill">Bill</label><br />
+
+                <input
+                  class="inputFormCalc inputBillIcon"
+                  type="text"
+                  name="bill"
+                  id="bill"
+                  placeholder="0"
+                  required
+                /><br />
+              </div>
+
+              <!-- tips %-->
+              <div class="tipContainer">
+                <label for="TIP_RATE_5">Select Tip %</label><br />
+                <div class="tips">
+                  <button
+                    id="TIP_RATE_5"
+                    class="tipButton"
+                    type="button"
+                    value="0.05"
+                  >
+                    5%
+                  </button>
+                  <button
+                    id="TIP_RATE_10"
+                    class="tipButton"
+                    type="button"
+                    value="0.1"
+                  >
+                    10%
+                  </button>
+                  <button
+                    id="TIP_RATE_15"
+                    class="tipButton"
+                    type="button"
+                    value="0.15"
+                  >
+                    15%
+                  </button>
+                  <button
+                    id="TIP_RATE_25"
+                    class="tipButton"
+                    type="button"
+                    value="0.25"
+                  >
+                    25%
+                  </button>
+                  <button
+                    id="TIP_RATE_50"
+                    class="tipButton"
+                    type="button"
+                    value="0.5"
+                  >
+                    50%</button
+                  ><br />
+                  <button class="tipButtonCalc" type="button" id="testbutton">
+                    calc</button
+                  ><br />
+                </div>
+              </div>
+
+              <div>
+                <label for="numberOfPeople">Number of People</label><br />
+                <input
+                  class="inputFormCalc inputPersonIcon"
+                  type="text"
+                  name="numberOfPeople"
+                  id="numberOfPeople"
+                  placeholder="0"
+                  required
+                />
+              </div>
+            </form>
+          </div>
+          <div class="output">
+            <div class="outputContainer">
+              <div class="display">
+                <div class="tipAmount">
+                  <div class="info">
+                    tip amount <br /><span class="perPerson">/ person</span>
+                  </div>
+                  <div class="tipAmountPrice" id="tipAmountPrice">$0.00</div>
+                </div>
+                <div class="total">
+                  <div class="info">
+                    total<br /><span class="perPerson">/ person</span>
+                  </div>
+                  <div class="tipAmountPrice" id="tipTotalPrice">$0.00</div>
+                </div>
+              </div>
+              <div class="reset">
+                <button
+                  class="resetButton"
+                  type="button"
+                  aria-label="Clear input field"
+                >
+                  reset
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section></section>
+
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
